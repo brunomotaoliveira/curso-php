@@ -22,6 +22,10 @@
 
     <main class="principal">
         <div class="conteudo">
+            <?php
+                //include( $_GET['dir'] . '/' . $_GET['file'] . ".php");
+                include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");
+            ?>
         </div>
     </main>
     <footer class="rodape">
