@@ -11,7 +11,7 @@
     echo '<br>';
     echo $totalB;
     echo '<br>';
-    echo $totalC;
+    echo "O resultado final é " . $totalC . ".";
 
 
 
