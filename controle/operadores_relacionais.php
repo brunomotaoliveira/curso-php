@@ -24,7 +24,7 @@
     var_dump(1 !== '1'); // verifica o tipo e valor
 
 
-    echo "<p>Relacionais no If/Else</p><hr>";
+    echo "<p class='divisao'>Relacionais no If/Else</p><hr>";
     $idade = 15;
     if($idade < 18) {
         echo "Menor de idade = $idade anos<br>";
@@ -34,23 +34,14 @@
         echo "Terceira idade = $idade anos!";
     }
 
-    echo '<p>Spaceship</p><hr>';
+    echo '<p class="divisao">Spaceship</p><hr>';
     var_dump(5 <=> 3); // <=>  : operador space ship
     var_dump(50 <=> 50); // se forem iguais, retorna 0
     var_dump(5 <=> 50); // se o primeiro for maior que o seguindo, retorna -1
 
-    echo '<p>Valores podem ser verdadeiro ou falso</p><hr>';
+    echo "<p class='divisao'>Valores podem ser verdadeiro ou falso</p><hr>";
     var_dump(!!5);
     var_dump(!!0);
     var_dump(!!"");
     var_dump(!!"");
 ?>
-
-<style>
-    p {
-        margin-bottom: 0;
-    }
-    hr {
-        margin-top: 0;
-    }
-</style>
