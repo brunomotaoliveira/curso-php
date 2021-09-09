@@ -7,6 +7,8 @@
         <option value="milha-km">Milha > Km</option>
         <option value="metro-km">Metros > Km</option>
         <option value="km-metro">Km > Metros</option>
+        <option value="celsius-fahr">Celsius > Fahrenheit</option>
+        <option value="fahr-celsius">Fahrenheit > Celsius</option>
     </select>
 
     <button>Calcular</button>
@@ -51,6 +53,18 @@
             $quantidadeDeKmMetros = number_format($quantidadeDeKmMetros,0,'.', '.');
             echo $_POST['param'] . " quilômetros" . " tem $quantidadeDeKmMetros metros";
             break;
+
+        case 'celsius-fahr':
+            $fahrenheit = ($_POST['param'] * 1.8) + 32;
+            $fahrenheit = number_format($fahrenheit,1);
+            echo $_POST['param'] . " celsius" . " equivale a $fahrenheit fahrenheit";
+            break;
+
+        case 'fahr-celsius':
+            $celsius = ($_POST['param'] - 32) / 1.8;
+            $celsius = number_format($celsius,1);
+            echo $_POST['param'] . " fahrenheit" . " equivale a $celsius celsius";
+            
         default:
             $mensagem = "Nenhum valor calculado";
     }
