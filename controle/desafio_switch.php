@@ -30,22 +30,26 @@
     switch($_POST['conversao']) {
         case 'km-milha':
             $quantidadeDeMilhas = $_POST['param'] / $milha;
-            $quantidadeDeMilhas = number_format($quantidadeDeMilhas,2); // formata o numero/casas decimais
+            $quantidadeDeMilhas = number_format($quantidadeDeMilhas,0, '.', '.'); // formata o numero/casas decimais
             echo $_POST['param'] . " quilômetros" . " tem $quantidadeDeMilhas milhas";
             break;
         
         case 'milha-km':
             $quantidadeDeKm = $_POST['param'] * $milha;
-            $quantidadeDeKm = number_format($quantidadeDeKm,2, '.', '.');
+            $quantidadeDeKm = number_format($quantidadeDeKm,0, '.', '.');
             echo $_POST['param'] . " milhas" . " tem $quantidadeDeKm quilômetros";
             break;
 
         case 'metro-km':
             $quantidadeDeMetrosKm = $_POST['param'] / $metros;
-            $quantidadeDeMetrosKm = number_format($quantidadeDeMetrosKm,2, '.', '.');
+            $quantidadeDeMetrosKm = number_format($quantidadeDeMetrosKm,0, '.', '.');
             echo $_POST['param'] . " metros" . " tem $quantidadeDeMetrosKm quilômetros";
             break;
         
-        
+        case 'km-metro':
+            $quantidadeDeKmMetros = $_POST['param'] * $metros;
+            $quantidadeDeKmMetros = number_format($quantidadeDeKmMetros,0,'.', '.');
+            echo $_POST['param'] . " quilômetros" . " tem $quantidadeDeKmMetros metros";
+            break;
     }
 ?>
