@@ -1,1 +1,35 @@
 <div class="titulo">Desafio Switch</div>
+
+<form action="#" method="post">
+    <input type="text" name="param">
+    <select name="conversao" id="conversao">
+        <option value="km-milha">Km > Milha</option>
+        <option value="milha-km">Milha > Km</option>
+        <option value="metro-km">Metros > Km</option>
+        <option value="km-metro">Km > Metros</option>
+    </select>
+
+    <button>Calcular</button>
+</form>
+
+<style>
+    form > * { /* qualquer elemento que estiver relaciona a form */
+        font-size: 1.8rem;
+    }
+</style>
+
+
+<?php 
+    //  echo $_POST['conversao'];
+    //  echo $_POST['param'];
+
+    $milha = 1.60934;
+
+
+    switch($_POST['conversao']) {
+        case 'km-milha':
+            $quantidadeDeMilhas = $_POST['param'] / $milha;
+            $quantidadeDeMilhas = number_format($quantidadeDeMilhas,2); // formata o numero/casas decimais
+            echo $_POST['param'] . " quilômetros" . " tem $quantidadeDeMilhas milhas";
+    }
+?>
