@@ -21,4 +21,30 @@ if($categoria ==='luxo') {
 
 $precoFormatado = number_format($preco, 2, ',', '.');
 echo "<p>Carro: $carro<br>Preço: R$ $precoFormatado</p>";
+// UTILIZANDO O SWITCH
+/*
+*
+*
+*/
+$categoria = 'suv básico';
+switch (strtolower($categoria)) {
+    case 'luxo': 
+        $carro = 'Mercedes';
+        $preco = 25000;
+        break;
+    
+    case 'suv': 
+    case 'suv básico': 
+        $carro = 'Renegade';
+        $preco = 80000;
+        break;
+    
+    default:
+        $carro = 'Mobi';
+        $preco = 33000;
+        break;
+}
+
+$precoFormatado = number_format($preco, 2, ',','.');
+echo "<p>Carro: $carro<br>Preco: $precoFormatado</p>";
 ?>
