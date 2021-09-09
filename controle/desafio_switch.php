@@ -24,6 +24,7 @@
     //  echo $_POST['param'];
 
     $milha = 1.60934;
+    $metros = 1000;
 
 
     switch($_POST['conversao']) {
@@ -39,6 +40,12 @@
             echo $_POST['param'] . " milhas" . " tem $quantidadeDeKm quilômetros";
             break;
 
+        case 'metro-km':
+            $quantidadeDeMetrosKm = $_POST['param'] / $metros;
+            $quantidadeDeMetrosKm = number_format($quantidadeDeMetrosKm,2, '.', '.');
+            echo $_POST['param'] . " metros" . " tem $quantidadeDeMetrosKm quilômetros";
+            break;
+        
         
     }
 ?>
