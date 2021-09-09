@@ -31,5 +31,14 @@
             $quantidadeDeMilhas = $_POST['param'] / $milha;
             $quantidadeDeMilhas = number_format($quantidadeDeMilhas,2); // formata o numero/casas decimais
             echo $_POST['param'] . " quilômetros" . " tem $quantidadeDeMilhas milhas";
+            break;
+        
+        case 'milha-km':
+            $quantidadeDeKm = $_POST['param'] * $milha;
+            $quantidadeDeKm = number_format($quantidadeDeKm,2, '.', '.');
+            echo $_POST['param'] . " milhas" . " tem $quantidadeDeKm quilômetros";
+            break;
+
+        
     }
 ?>
