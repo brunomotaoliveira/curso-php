@@ -1,8 +1,8 @@
 <div class="titulo">Desafio Meses</div>
 
 <?php 
-$meses = array(1,
-    "Janeiro",
+$meses = array(
+    1 => "Janeiro",
     "Fevereiro",
     "Março",
     "Abril",
