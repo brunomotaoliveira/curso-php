@@ -13,3 +13,12 @@ São duas versões
 
 2) não pode usar incremento $i++;
 -->
+
+<?php 
+$impressao = '';
+
+for($i = 0; $i <= 5; $i++){
+    $impressao .= '#';
+    echo "$impressao <br>";
+}
+?>
