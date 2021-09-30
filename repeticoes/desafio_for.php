@@ -17,8 +17,14 @@ São duas versões
 <?php 
 $impressao = '';
 
-for($i = 0; $i <= 5; $i++){
-    $impressao .= '#';
+for($i = 0; $i < 5; $i++){
+    $impressao .= '#'; //concatena o hashtag utilizando o " .= ". Toda vez que o laço se repetir um novo hashtag será concatenado
     echo "$impressao <br>";
+}
+
+echo '<hr>';
+
+for($impressao2 = '#'; $impressao2 !== '######'; $impressao2 .= '#'){
+    echo "$impressao2 <br>";
 }
 ?>
