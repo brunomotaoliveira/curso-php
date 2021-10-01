@@ -34,4 +34,14 @@ foreach ($matriz as $linha) {
     }
     echo "<br>";
 }
+
+//valor vs referencia
+
+$numeros = [1, 2, 3, 4, 5];
+foreach ($numeros as &$dobrar) {
+    $dobrar *= 2;
+    echo "$dobrar <br>";
+}
+
+print_r($numeros);
 ?>
