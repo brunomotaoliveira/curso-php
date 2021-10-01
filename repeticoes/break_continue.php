@@ -23,5 +23,15 @@ for(;;) {
     }
 }
 
+foreach(array(1,2,3,4,5,6) as $valor) {
+    if($valor === 5){ // só irá mostrar os valores impares, se encerra no 5.
+        break;
+    }
+    if($valor % 2 === 0){
+        continue;
+    }
+    echo "$valor <br>";
+}
+
 echo "Fim!";
 ?>
