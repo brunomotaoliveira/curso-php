@@ -10,10 +10,16 @@ for(;;) {
     }
 }
 
+echo "<br><hr>";
+
 for(;;) {
     $cont++;
     if($cont % 2 === 1) { // só vai passar para as próximas linhas se o número for par
         continue;
+    }
+    echo "$cont <br>";
+    if($cont >= 30) { // ecenrra o contador quando o numero for igual a 30.
+        break;
     }
 }
 
