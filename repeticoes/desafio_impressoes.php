@@ -17,4 +17,9 @@ $array = [
     "EEE",
     "FFF"
 ];
+
+for($i = 0; $i < count($array); $i++) {
+    if($i % 2 === 1) continue;
+    echo "{array[$i]} <br>";
+}
 ?>
