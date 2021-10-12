@@ -179,6 +179,9 @@
                         <li>
                             <a href="exercicio.php?dir=repeticoes&file=desafio_impressoes">Desafio Impressões</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=repeticoes&file=while">While/Do While</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
