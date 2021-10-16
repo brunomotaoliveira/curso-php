@@ -30,6 +30,17 @@
     ?>
 </table>
 
+<table>
+    <?php 
+        foreach($matriz as $index => $linha) {
+            $style = '';
+            if($index % 2 === 1) {
+                $style = 'background-color: lightblue;';
+            }
+        }
+    ?>
+</table>
+
 <style>
     table {
         border: 1px solid #444;
