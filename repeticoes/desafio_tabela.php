@@ -34,6 +34,11 @@
     <?php 
         foreach($matriz as $index => $linha) {
             $style = $index % 2 === 1 ? 'background-color: lightblue;' : ''; // se a expressão for verdadeira aplica azul, se não. Não aplica nada
+            echo "<tr style='{$style}'>";
+            foreach($linha as $valor) {
+                echo "<td>$valor</td>";
+            }
+            echo '</tr>';
         }
     ?>
 </table>
