@@ -183,7 +183,10 @@
                             <a href="exercicio.php?dir=repeticoes&file=while">While/Do While</a>
                         </li>
                         <li>
-                            <a href="exercicio.php?dir=repeticoes&file=desafio_tabela">Desafio Tabela</a>
+                            <a href="exercicio.php?dir=repeticoes&file=desafio_tabela">Desafio Tabela #01</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=repeticoes&file=desafio_tabela_2">Desafio Tabela #02</a>
                         </li>
                     </ul>
                 </div>
