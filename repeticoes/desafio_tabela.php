@@ -17,6 +17,19 @@
     }
 ?>
 
+<table>
+    <?php 
+        foreach($matriz as $linha) {
+            echo '<tr>';
+            foreach($linha as $valor) {
+                echo "<td>$valor</td>";
+            }
+
+            echo '</tr>';
+        }
+    ?>
+</table>
+
 <style>
     table {
         border: 1px solid #444;
