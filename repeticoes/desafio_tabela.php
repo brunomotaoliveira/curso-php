@@ -33,10 +33,7 @@
 <table>
     <?php 
         foreach($matriz as $index => $linha) {
-            $style = '';
-            if($index % 2 === 1) {
-                $style = 'background-color: lightblue;';
-            }
+            $style = $index % 2 === 1 ? 'background-color: lightblue;' : ''; // se a expressão for verdadeira aplica azul, se não. Não aplica nada
         }
     ?>
 </table>
