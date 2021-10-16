@@ -3,11 +3,11 @@
 <form action="#" method="post">
     <div>
         <label for="linhas">Linhas</label>
-        <input type="number" value="10" name="linhas" id="linhas">
+        <input type="number" value=<?= $_POST['linhas'] ?? 10 ?> name="linhas" id="linhas">
     </div>
     <div>
         <label for="colunas">Colunas</label>
-        <input type="number" value="10" name="colunas" id="colunas">
+        <input type="number" value=<?= $_POST['colunas'] ?? 10 ?> name="colunas" id="colunas">
     </div>
     <button>Gerar Tabela</button>
 </form>
