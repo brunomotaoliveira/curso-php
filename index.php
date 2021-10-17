@@ -190,7 +190,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="modulo verde">
+                <div class="modulo vermelho-escuro">
                     <h3>7. Funções</h3>
                     <ul>
                         <li>
