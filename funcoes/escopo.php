@@ -31,4 +31,6 @@ function trocaValorDeVerdade() {
 echo "Antes: $variavel <br>";
 trocaValorDeVerdade();
 echo "Depois: $variavel <br>";
+
+var_dump(trocaValorDeVerdade());
 ?>
