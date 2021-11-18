@@ -29,4 +29,13 @@
 
     echo '<br>', soma($x, $y);
     echo '<br>', soma(22, 25);
+
+    function trocarValor($a, $novoValor) {
+        $a = $novoValor;
+    }
+
+    //o php passa o valor da variavel por valor, e não por referência.
+    $variavel = 1;
+    trocarValor($variavel, 3);
+    echo '<br>', $variavel;
 ?>
