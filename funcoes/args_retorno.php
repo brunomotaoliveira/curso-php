@@ -6,4 +6,7 @@
     }
 
     echo obterMensagem();
+    $mensagem = obterMensagem();
+
+    echo $m;
 ?>
