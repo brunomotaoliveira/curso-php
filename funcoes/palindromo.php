@@ -11,8 +11,18 @@
         return 'Sim';
     }
 
-    echo palindromo('arara') . '<br>';
-    echo palindromo('ana') . '<br>';
-    echo palindromo('abccba') . '<br>';
-    echo palindromo('bola') . '<br>';
+    echo palindromo('arara') . ' ';
+    echo palindromo('ana') . ' ';
+    echo palindromo('abccba') . ' ';
+    echo palindromo('bola') . ' ';
+    echo '<br>';
+
+    function palindromoSimples($palavra) {
+        return $palavra === strrev($palavra) ? 'Sim': 'Não';
+    }
+
+    echo palindromoSimples('arara') . ' ';
+    echo palindromoSimples('ana') . ' ';
+    echo palindromoSimples('abcba') . ' ';
+    echo palindromoSimples('bola') . ' ';
 ?>
