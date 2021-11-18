@@ -24,6 +24,9 @@
         return $a + $b;
     }
 
-    echo '<br>', soma(4, 5);
+    $x = 4;
+    $y = 5;
+
+    echo '<br>', soma($x, $y);
     echo '<br>', soma(22, 25);
 ?>
