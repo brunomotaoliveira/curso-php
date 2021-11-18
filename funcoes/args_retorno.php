@@ -19,4 +19,11 @@
     }
 
     echo '<br>', ObterMensagemComNome('Bruno Mota');
+
+    function soma($a, $b) {
+        return $a + $b;
+    }
+
+    echo '<br>', soma(4, 5);
+    echo '<br>', soma(22, 25);
 ?>
