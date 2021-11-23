@@ -10,9 +10,13 @@
     echo soma(6, 5, 4) . '<br>';
 
     function somaCompleta(...$numeros) {
-        print_r($numeros);
+        $soma = 0;
+        foreach($numeros as $num) {
+            $soma += $num;
+        }
+        return $soma;
     }
 
-    somaCompleta(1);
+    echo somaCompleta(1, 2, 3, 4, 5);
 
 ?>
