@@ -19,4 +19,7 @@
 
     echo somaCompleta(1, 2, 3, 4, 5);
 
+    $array = [6, 7, 8];
+    echo '<br>' . somaCompleta(...$array);
+
 ?>
