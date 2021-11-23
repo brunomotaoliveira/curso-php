@@ -22,4 +22,18 @@
     $array = [6, 7, 8];
     echo '<br>' . somaCompleta(...$array);
 
+    function membros($titular, ...$dependentes) {
+        echo "Titular: $titular <br>";
+        if($dependentes) {
+            foreach($dependentes as $dep) {
+                echo "Dependente: $dep <br>";
+            }
+        }
+    }
+
+    echo '<br>';
+    membros("Ana Silva", "Pedro", "Rafaela", "Amanda");
+
+    echo '<br>';
+    membros("Roberto", "Junior");
 ?>
