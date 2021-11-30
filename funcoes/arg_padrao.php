@@ -8,4 +8,5 @@ function saudacao($nome = 'Senhor(a)', $sobrenome = 'Cliente') {
 saudacao();
 saudacao(NULL);
 saudacao(null, NULL);
+saudacao('Mestre', 'Supremo');
 ?>
