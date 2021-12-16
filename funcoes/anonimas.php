@@ -15,4 +15,10 @@ function executar($a, $b, $op, $funcao) {
 
 executar(2, 3, '+', $soma);
 
+$multiplicacao = function($a, $b) {
+    return $a * $b;
+};
+
+executar(2, 3, '*', $multiplicacao);
+
 ?>
