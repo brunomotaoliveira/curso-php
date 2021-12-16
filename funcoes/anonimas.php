@@ -21,4 +21,7 @@ $multiplicacao = function($a, $b) {
 
 executar(2, 3, '*', $multiplicacao);
 
+function divisao($a, $b) {
+    return $a / $b;
+}
 ?>
