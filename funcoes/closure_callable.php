@@ -27,6 +27,14 @@ echo '<br>';
 executar1(2, 3, '+', $soma1);
 executar1(2, 3, '+', 'soma2');
 
+function executar2($a, $b, $op, Closure $funcao) {
+    $resultado = $funcao($a, $b) ?? 'Nada';
+    echo "$a $op $b = $resultado<br>";
+}
+
+echo '<br>';
+executar2(2, 3, '+', $soma1);
+executar2(2, 3, '+', 'soma2');
 
 
 ?>
