@@ -7,5 +7,6 @@ $soma1 = function($a, $b) {
 };
 
 echo $soma1(2, 3) . '<br>';
+echo is_callable($soma1) ? 'Sim' : 'Não' . '<br>'
 
 ?>
