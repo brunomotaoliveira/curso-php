@@ -12,4 +12,16 @@ function somaUmAte($numero) {
 
 echo somaUmAte(10) . '<br>';
 
+function somaRecursivaUmAte($numero) {
+    // condição de parada
+    if($numero === 1) {
+        return 1;
+    }
+    return $numero + somaRecursivaUmAte($numero - 1);
+}
+
+echo somaRecursivaUmAte(150) . '<br>';
+
+
+
 ?>
