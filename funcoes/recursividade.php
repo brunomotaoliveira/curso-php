@@ -4,12 +4,12 @@
 
 function somaUmAte($numero) {
     $soma = 0;
-    for(; $numero >= 1; $numero--) {
-        $soma += $numero;
+    for($i = 1; $i <= $numero; $i++) {
+        $soma += $i;
     }
     return $soma;
 }
 
-echo somaUmAte(5) . '<br>';
+echo somaUmAte(10) . '<br>';
 
 ?>
