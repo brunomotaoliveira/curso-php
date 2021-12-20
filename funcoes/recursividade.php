@@ -22,6 +22,10 @@ function somaRecursivaUmAte($numero) {
 
 echo somaRecursivaUmAte(150) . '<br>';
 
+function somaRecursivaEconomica($numero) {
+    return $numero === 1 ? 1 : $numero + somaRecursivaEconomica($numero -1);
+}
 
+echo somaRecursivaEconomica(150) . '<br>';
 
 ?>
