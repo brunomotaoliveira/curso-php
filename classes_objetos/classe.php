@@ -8,8 +8,11 @@ class Cliente {
     public $idade = 18;
 
     public function apresentar() {
-        
+        echo "Nome: {$this->nome}<br>";
     }
 }
+
+$c1 = new Cliente();
+$c1->apresentar(); // acessa o membro de um objeto criado
 
 ?>
