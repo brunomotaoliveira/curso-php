@@ -13,7 +13,11 @@ class DesafioData {
     }
 }
 
-$novoCliente = new DesafioData();
+$aniversario = new DesafioData(); // instanciando a classe
+$aniversario->dia = 15; // aniversario.dia
+$aniversario->mes = 8;
+$aniversario->ano = 2014;
 
-echo $novoCliente->apresentar();
+
+echo $aniversario->apresentar(); // aniversario.apresentar()
 ?>
