@@ -18,6 +18,12 @@ $aniversario->dia = 15; // aniversario.dia
 $aniversario->mes = 8;
 $aniversario->ano = 2014;
 
+$casamento = new DesafioData(); // instanciando a classe
+$casamento->dia = 1;
+$casamento->mes = 8;
+$casamento->ano = 2009;
 
-echo $aniversario->apresentar(); // aniversario.apresentar()
+
+echo $aniversario->apresentar(), '<br>'; // aniversario.apresentar()
+echo $casamento->apresentar();
 ?>
