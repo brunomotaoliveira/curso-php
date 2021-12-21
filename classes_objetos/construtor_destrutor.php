@@ -21,6 +21,14 @@ class Pessoa {
     }
 
     public function apresentar() {
-        
+        echo "{$this->nome}, {$this->idade} anos<br>";
     }
 }
+
+
+$pessoa = new Pessoa('Rebeca Maria', 40);
+$pessoa->apresentar();
+
+//$pessoa = new Pessoa(); // problema
+
+unset($pessoa);
