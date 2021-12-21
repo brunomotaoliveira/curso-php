@@ -28,7 +28,11 @@ class Pessoa {
 
 $pessoa = new Pessoa('Rebeca Maria', 40);
 $pessoa->apresentar();
+unset($pessoa);
+
+$pessoaB = new Pessoa('João Paulo', 23);
+$pessoaB->apresentar();
+$pessoaB = null;
+
 
 //$pessoa = new Pessoa(); // problema
-
-unset($pessoa);
