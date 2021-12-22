@@ -42,7 +42,9 @@ class Usuario extends Pessoa {
         echo 'Usuário diz: Tchau!!';
     }
 
-    
+    public function apresentar() {
+        echo "@{$this->login}: {$this->nome}, {$this->idade} anos<br>";
+    }
 }
 
 $usuario = new Usuario('Bruno Mota', 30, 'brun_mot');
