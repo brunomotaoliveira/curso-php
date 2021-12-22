@@ -19,12 +19,33 @@ class Pessoa {
 
     function __destruct()
     {
-        echo 'Tchau!!';
+        echo 'Pessoa diz: Tchau!!';
     }
 
     public function apresentar() {
         echo "{$this->nome}, {$this->idade} anos<br>";
     }
 }
+
+class Usuario extends Pessoa {
+    public $login;
+
+    function __construct($nome, $idade, $login) {
+        $this->nome = $nome;
+        $this->idade = $idade;
+        $this->login = $login;
+        echo 'Usuario Criado! <br>';
+    }
+
+    function __destruct()
+    {
+        echo 'Usuário diz: Tchau!!';
+    }
+
+    
+}
+
+$usuario = new Usuario('Bruno Mota', 30, 'brun_mot');
+$usuario->apresentar();
 
 ?>
