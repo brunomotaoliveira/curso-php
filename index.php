@@ -246,6 +246,9 @@
                         <li>
                             <a href="exercicio.php?dir=classes_objetos&file=heranca">Herança</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=teste">teste</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
