@@ -249,6 +249,9 @@
                         <li>
                             <a href="exercicio.php?dir=classes_objetos&file=teste">teste</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=visibilidade">Visibilidade</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
