@@ -38,6 +38,8 @@ $pedidos = [
         "valor" =>  100
     ],
 ];
+
+//foreach para testes
 /* foreach($list_user as $user) {
     //$pedidosGabriel = [];
     //$pedidosBruno = [];
