@@ -13,6 +13,10 @@ class A {
         echo "a) Privado = {$this->privado}<br>";
     }
 
+    protected function vaiPorHeranca() {
+        echo 'Serei transmitido por herança!<br>';
+    }
+
     private function naoMostrar() { // não é possivel acessar diretamente
         echo 'Não vou imprimir!';
     }
@@ -28,10 +32,16 @@ class B extends A {
     public function mostrarB() {
         echo "Class B) Publico = {$this->publico}<br>";
         echo "Class B) Protegido = {$this->protegido}<br>";
+        echo "Class B) Privado = {$this->privado}<br>";
+
+
+        parent::vaiPorHeranca();
     }
 }
 echo '<br>';
 $b = new B();
 $b->mostrarB();
+$b->mostrarA();
+//$b->vaiPorHeranca();
 
 ?>
