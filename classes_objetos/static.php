@@ -23,8 +23,11 @@ class A {
 
 //  $objetoA = new A();
 //  $objetoA->mostrarA();
-// $objetoA->mostrarStaticA();
-echo A::$static, '<br>';
-A::mostrarStaticA();
+// $objetoA->mostrarStaticA(); //não é a forma ideal
+echo A::$static, '<br>'; // acessar diretamente pela classe
+A::mostrarStaticA(); // acessar diretamente pela classe
 
+
+A::$static = 'Alterado membro de classe!';
+echo A::$static, '<br>'; /// acessar diretamente pela classe
 ?>
