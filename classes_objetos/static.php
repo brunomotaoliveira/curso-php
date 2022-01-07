@@ -16,12 +16,15 @@ class A {
 
     public static function mostrarStaticA() {
         //echo "Não estática = {$this->naoStatic}<br>";
-        echo "Estática = {$static}<br>";
+        //echo "Estática = {$static}<br>";
+        echo "Estática = " . self::$static . "<br>";
     }
 }
 
-$objetoA = new A();
-$objetoA->mostrarA();
-$objetoA->mostrarStaticA();
+//  $objetoA = new A();
+//  $objetoA->mostrarA();
+// $objetoA->mostrarStaticA();
+echo A::$static, '<br>';
+A::mostrarStaticA();
 
 ?>
