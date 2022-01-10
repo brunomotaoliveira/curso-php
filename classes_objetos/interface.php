@@ -6,7 +6,11 @@ interface Animal {
     function respirar();
 }
 
-interface Canino {
+interface Mamifero {
+    function mamar();
+}
+
+interface Canino extends Animal { //metodos dentro da interface são publicos por padrao
     function latir(): string;
 }
 
@@ -21,7 +25,8 @@ class Cachorro implements Animal, Canino {
 }
 
 $animal1 = new Cachorro();
-$animal1->respirar();
+echo $animal1->respirar(), '<br>';
+echo $animal1->latir(), '<br>';
 
 echo 'Fim!';
 ?>
