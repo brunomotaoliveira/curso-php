@@ -22,11 +22,16 @@ class Cachorro implements Animal, Canino {
     function latir(): string {
         return 'au au';
     }
+
+    function mamar() {
+        return "Irei usar leite!";
+    }
 }
 
 $animal1 = new Cachorro();
 echo $animal1->respirar(), '<br>';
 echo $animal1->latir(), '<br>';
+echo $animal1->mamar(), '<br>';
 
 echo 'Fim!';
 ?>

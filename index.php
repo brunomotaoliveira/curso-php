@@ -250,7 +250,7 @@
                             <a href="exercicio.php?dir=classes_objetos&file=heranca">Herança</a>
                         </li>
                         <li>
-                            <a href="exercicio.php?dir=classes_objetos&file=teste">teste</a>
+                            <a href="exercicio.php?dir=classes_objetos&file=interface">Interface</a>
                         </li>
                         <li>
                             <a href="exercicio.php?dir=classes_objetos&file=visibilidade">Visibilidade</a>
