@@ -7,10 +7,13 @@ interface Animal {
 }
 
 class Cachorro implements Animal {
-
+    function respirar() {
+        echo "Irei usar oxigênio!<br>";
+    }
 }
 
 $animal1 = new Cachorro();
 $animal1->respirar();
 
+echo 'Fim!';
 ?>
