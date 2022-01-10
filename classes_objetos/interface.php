@@ -28,10 +28,17 @@ class Cachorro implements Animal, Canino {
     }
 }
 
-$animal1 = new Cachorro();
-echo $animal1->respirar(), '<br>';
-echo $animal1->latir(), '<br>';
-echo $animal1->mamar(), '<br>';
+$animal = new Cachorro();
+echo $animal->respirar(), '<br>';
+echo $animal->latir(), '<br>';
+echo $animal->mamar(), '<br>';
 
-echo 'Fim!';
+echo '<br>';
+var_dump($animal);
+
+echo '<br>';
+var_dump($animal instanceof Cachorro);
+var_dump($animal instanceof Canino);
+var_dump($animal instanceof Mamifero);
+var_dump($animal instanceof Animal);
 ?>
