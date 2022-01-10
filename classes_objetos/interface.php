@@ -7,12 +7,16 @@ interface Animal {
 }
 
 interface Canino {
-    function latir();
+    function latir(): string;
 }
 
-class Cachorro implements Animal {
+class Cachorro implements Animal, Canino {
     function respirar() {
         echo "Irei usar oxigênio!<br>";
+    }
+
+    function latir(): string {
+        return 'au au';
     }
 }
 
