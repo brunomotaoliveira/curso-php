@@ -3,7 +3,7 @@
 <?php 
 
 interface Animal {
-    
+    function respirar();
 }
 
 ?>
