@@ -14,6 +14,10 @@ interface Canino extends Animal { //metodos dentro da interface são publicos po
     function latir(): string;
 }
 
+interface Felino {
+    function correr();
+}
+
 class Cachorro implements Animal, Canino {
     function respirar() {
         echo "Irei usar oxigênio!<br>";
@@ -41,4 +45,5 @@ var_dump($animal instanceof Cachorro);
 var_dump($animal instanceof Canino);
 var_dump($animal instanceof Mamifero);
 var_dump($animal instanceof Animal);
+var_dump($animal instanceof Felino);
 ?>
