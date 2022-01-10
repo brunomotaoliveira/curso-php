@@ -6,6 +6,10 @@ interface Animal {
     function respirar();
 }
 
+interface Canino {
+    function latir();
+}
+
 class Cachorro implements Animal {
     function respirar() {
         echo "Irei usar oxigênio!<br>";
