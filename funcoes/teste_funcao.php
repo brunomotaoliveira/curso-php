@@ -3,17 +3,17 @@
 <?php 
 
 interface Animal {
-    function respirar();
+    function respirarFundo();
 }
 
 class Cachorro implements Animal {
-    function respirar() {
+    function respirarFundo() {
         echo "Irei usar oxigênio!<br>";
     }
 }
 
 $animal1 = new Cachorro();
-$animal1->respirar();
+$animal1->respirarFundo();
 
 echo 'Fim!';
 ?>
