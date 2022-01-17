@@ -6,6 +6,10 @@ interface Animal {
     function respirarFundo();
 }
 
+interface TesteComida{
+    function preparar();
+}
+
 class Cachorro implements Animal {
     function respirarFundo() {
         echo "Irei usar oxigênio!<br>";
