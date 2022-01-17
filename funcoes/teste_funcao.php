@@ -14,7 +14,13 @@ class Cachorro implements Animal {
     function respirarFundo() {
         echo "Irei usar oxigênio!<br>";
     }
+
+    function preparar() {
+        echo "Colocar comida no prato";
+    }
 }
+
+
 
 $animal1 = new Cachorro();
 $animal1->respirarFundo();
