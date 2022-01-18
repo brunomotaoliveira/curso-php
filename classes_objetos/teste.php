@@ -15,27 +15,27 @@ $pedidos = [
     [
         "id_user" => 1, 
         "name"  => "Pão de queijo",
-        "valor" =>  100
+        "valor" =>  120
     ],
     [
         "id_user" => 1, 
         "name"  => "cafe com leite",
-        "valor" =>  200
+        "valor" =>  205
     ],
     [
         "id_user" => 2, 
         "name"  => "Pão de queijo",
-        "valor" =>  100
+        "valor" =>  103
     ],
     [
         "id_user" => 2, 
         "name"  => "Pão doce",
-        "valor" =>  100
+        "valor" =>  107
     ],
     [
         "id_user" => 2, 
         "name"  => "Suco",
-        "valor" =>  100
+        "valor" =>  102
     ],
 ];
 
