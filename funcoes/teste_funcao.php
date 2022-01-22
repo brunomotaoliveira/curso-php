@@ -13,6 +13,7 @@ interface TesteComida{
 class Cachorro implements Animal {
     function respirarFundo() {
         echo "Irei usar oxigênio!<br>";
+        echo "E correr";
     }
 
     function preparar() {
